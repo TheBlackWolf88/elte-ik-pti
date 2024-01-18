@@ -1,0 +1,10 @@
+5 8
+Etelka 2
+Andor 1
+Andor 3
+Bea 3
+Cecil 1
+Bea 4
+Dani 4
+Cecil 3
+

@@ -1,0 +1,39 @@
+﻿using System;
+namespace Beadando1 {
+    class Program {
+        static void Main (string[] args){
+            int faldarabok;
+            int orsegek;
+            string[] data = Console.ReadLine()!.Split(" ");
+            int.TryParse(data[0], out faldarabok);
+            int.TryParse(data[1], out orsegek);
+            
+            int[] arr = new int[faldarabok+1];
+            for(int i = 0; i < orsegek; i++){
+                int be = int.Parse(Console.ReadLine()!);
+                arr[be-1] = 1; 
+            } 
+
+            int orzott_szakasz = 0;
+            for(int i = 0; i <= faldarabok; i++){
+                if(arr[i] == 0){
+                    if(i == 0){
+                        orzott_szakasz++;
+                        while (arr[i] == 0 && i < faldarabok) i++;
+                    } else if(i == faldarabok){
+                        if(arr[i-1] == 1){
+                             orzott_szakasz++;
+                        }
+                    }
+                    else {
+                        if(arr[i-1] == 1 && arr[i+1] == 0){
+                            orzott_szakasz++;
+                            while (arr[i] == 0 && i < faldarabok) i++;
+                        }
+                    }
+                }
+            }
+            Console.WriteLine(orzott_szakasz);
+        }
+    }
+} 
