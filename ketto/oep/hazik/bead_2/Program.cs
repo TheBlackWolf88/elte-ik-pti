@@ -18,7 +18,7 @@
 
         public static Rational Subtract(Rational a, Rational b)
         {
-            return new Rational(a.n - b.d - a.d * b.n, a.d * b.d);
+            return new Rational(a.n * b.d - a.d * b.n, a.d * b.d);
         }
         public static Rational Divide(Rational a, Rational b)
         {
@@ -37,7 +37,7 @@
 
         public static Rational operator -(Rational a, Rational b)
         {
-            return new Rational(a.n - b.d - a.d * b.n, a.d * b.d);
+            return new Rational(a.n * b.d - a.d * b.n, a.d * b.d);
         }
         public static Rational operator /(Rational a, Rational b)
         {
@@ -52,7 +52,7 @@
 
         public override string ToString()
         {
-            return this.n + " + " + this.d + "i";
+            return this.n + "/" + this.d;
         }
     }
     internal class Program
