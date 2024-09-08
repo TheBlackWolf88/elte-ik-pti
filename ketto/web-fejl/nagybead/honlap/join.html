@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Babgyár Kft. - Jelentkezés</title>
+    <link rel="icon" type="image/png" href="media/bean.png">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function toggleNavBar() {
+            var element = document.getElementById("navbar");
+            element.classList.toggle("dis-n")
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="#content" class="hidden">Ugrás a tartalomra</a>
+        </nav>
+        <div id="con-head">
+            <div class="fr">
+                <img src="media/bab.png" alt="babgyár kft logója egy babkonzervvel" height="48">
+                <button class="float-right" id="hide-btn" onclick="toggleNavBar()"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg></button>
+            </div>
+            <div class="sep"></div>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Főoldal</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Rólunk</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <a href="join.html" class="selected">Jelentkezés</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <article>
+            <h1>Jelentkezés</h1>
+            <form action="mailto:hr.babgyar@gmail.com?subject=Jelentkezés" method="post">
+                <div class="fc">
+
+                    <div class="fr">
+                        <div class="fc">
+
+                            <div class="cell">
+                                <label for="fname">Vezetéknév</label><br>
+                                <input type="text" name="fname" id="fname" maxlength="255" required>
+                            </div>
+                            <div class="cell">
+                                <label for="bdate">Születési idő</label><br>
+                                <input type="date" name="bdate" id="bdate" required>
+                            </div>
+                            <div class="cell">
+                                <label for="tel">Telefonszám</label><br>
+                                <input type="tel" name="tel" id="tel" maxlength="20" required>
+                            </div>
+                            <div class="cell">
+                                <span>Megpályázott pozició</span><br>
+                                <input type="radio" name="pozi" id="mark" value="marketing" required>
+                                <label for="mark">Marketing Asszisztens</label><br>
+                                <input type="radio" name="pozi" id="term" value="termeles" required>
+                                <label for="term">Termelési Munkás</label><br>
+                                <input type="radio" name="pozi" id="csupp" value="ugyfelszolg" required>
+                                <label for="csupp">Ügyfélszolgálati Menedzser</label><br>
+                            </div>
+
+
+                        </div>
+                        <div class="fc">
+                            <div class="cell">
+                                <label for="lname">Keresztnév</label><br>
+                                <input type="text" name="lname" id="lname" maxlength="255" required>
+                            </div>
+                            <div class="cell">
+                                <label for="city">Kiválasztott város</label><br>
+                                <select name="city" id="city" required>
+                                    <option value="" selected disabled hidden>...</option>
+                                    <option value="Budapest">Budapest</option>
+                                    <option value="Debrecen">Debrecen</option>
+                                    <option value="Miskolc">Miskolc</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label for="email">Email</label><br>
+                                <input type="email" name="email" id="email" maxlength="255" required>
+                            </div>
+                            <div class="cell">
+                                <label for="quali">Legmagasabb iskolai végzettség</label><br>
+                                <select name="quali" id="quali" required>
+                                    <option value="" selected disabled hidden>...</option>
+                                    <option value="kozep">Középiskola</option>
+                                    <option value="erettsegi">Érettségi</option>
+                                    <option value="foiskola">Főiskola</option>
+                                    <option value="diploma">Diploma</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fr">
+
+                        <div class="cell">
+                            <label for="bio">Írjon egy pár szót magáról!</label><br>
+                            <textarea name="bio" id="bio" cols="70" rows="10" required></textarea>
+                        </div>
+                    </div>
+                    <div id="submit-div" class="cell mh-1">
+                        <button type="submit">Jelentkezem emailben</button>
+                        <button type="reset" class="float-right">Űrlap alaphelyzetbe állítása</button>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer id="footer">
+        <div id="footer-table">
+            <ul id="left">
+                <li><strong>Kapcsolat</strong></li>
+                <li>Cím: Babgyár út 123, Pécsvárad, 1234</li>
+                <li>Telefon: +36 1 234 5678</li>
+                <li>E-mail: info@babgyar.hu</li>
+            </ul>
+            <ul id="right">
+                <li><strong>Navigáció</strong></li>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+                <li><a href="join.html">Jelentkezés</a></li>
+            </ul>
+        </div>
+        <div id="copyright"><strong>Copyright © 2024 Babgyár Kft.</strong></div>
+    </footer>
+</body>
+
+</html>

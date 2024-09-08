@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Babgyár Kft. - Rólunk</title>
+    <link rel="icon" type="image/png" href="media/bean.png">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function swapBiggyMode() {
+            var element = document.getElementById("content");
+            element.classList.toggle("nagy");
+        }
+
+        function toggleNavBar() {
+            var element = document.getElementById("navbar");
+            element.classList.toggle("dis-n")
+        }
+    </script>
+</head>
+
+<body>
+    <div id="floating-button">
+        <button onclick="swapBiggyMode()">
+            <img src="media/inc-font.svg" height="40" alt="Nagybetűs nézet">
+        </button>
+    </div>
+    <header id="header">
+        <nav>
+            <a href="#content" class="hidden">Ugrás a tartalomra</a>
+        </nav>
+        <div id="con-head">
+            <div class="fr">
+                <img src="media/bab.png" alt="babgyár kft logója egy babkonzervvel" height="48">
+                <button class="float-right" id="hide-btn" onclick="toggleNavBar()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg></button>
+            </div>
+            <div class="sep"></div>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Főoldal</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="selected">Rólunk</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <a href="join.html">Jelentkezés</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <article>
+            <h1>Rólunk</h1>
+            <section>
+                <h2>Üdvözöljük a Babgyár Kft.-nél!</h2>
+                <figure class="float-right">
+                    <a href="media/kep1.jpg" target="_blank">
+                        <img src="media/kep1-thumb.jpg" alt="füstölgő gyárépület" width="200">
+                    </a>
+                    <figcaption>A gyár épülete</figcaption>
+                </figure>
+                <p>Mi egy családi vállalkozás vagyunk, amely több mint 30 éve áll az Ön szolgálatában a legfinomabb
+                    babkonzervekkel. Azt hisszük, hogy az egészséges és tápláló ételek nem csak jók az Ön számára,
+                    de kiválóak az egész család számára.
+                </p>
+                <video src="media/reklam.mp4" width="500" controls poster="images/thumbnail.png">
+                       <p>A böngészője nem támogatja a html5 videólejátszást!</p> 
+                       <p>A videóállomány letölthető mp4 formátumban: <a href="media/reklam.mp4">reklam.mp4</a></p>
+                </video>
+                <div>
+                    <a href="vid-desc.html">A videó teljes leírása</a>
+                </div>
+            </section>
+            <section>
+                <h2>Küldetésünk és Értékeink</h2>
+                <figure class="float-right">
+                    <img src="media/kep2.jpg" alt="munkások a futószalag mellett és nagy robotkarok dolgoznak"
+                        width="200">
+                    <figcaption>A gyártási folyamat</figcaption>
+                </figure>
+                <p>Célunk, hogy minőségi és tápláló ételeket kínáljunk ügyfeleinknek, miközben támogatjuk az egészséges
+                    életmódot és az élvezetes táplálkozást. Az általunk készített babkonzervek friss, gondosan
+                    válogatott alapanyagokból készülnek, és minden egyes termékünk mögött azonos elkötelezettség áll: a
+                    minőség és az íz.</p>
+                <p><strong>Értékeink:</strong></p>
+                <ul>
+                    <li>Minőség: Szigorú minőségellenőrzési folyamatokat alkalmazunk, hogy minden termékünk kifogástalan
+                        legyen.</li>
+                    <li>Frissesség: Friss, kiváló minőségű alapanyagokból készítjük termékeinket, hogy Ön mindig a
+                        legjobbat kapja az asztalán.</li>
+                    <li>Hagyomány: Büszkék vagyunk arra, hogy hosszú múltra tekintünk vissza családi receptek és
+                        hagyományok ápolásában.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Termékeink számokban</h2>
+                <div class="table-con">
+                <table>
+                    <caption>
+                        <strong>Babkonzervek tápanyagérték összefoglaló(100 g termékben)</strong>
+                        <details open="">
+                            <summary>
+                                Mi ez?
+                            </summary>
+                            <p>Az alábbi táblázat összefoglalja a Babgyár Kft. különböző babkonzerveinek
+                                tápanyagértékét 100 grammonként. A táblázat tartalmazza az energia (kcal), fehérje,
+                                szénhidrát, zsír és rost mennyiségét. </p>
+                        </details>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Termék</th>
+                            <th scope="col">Energia (kcal)</th>
+                            <th scope="col">Fehérje (g)</th>
+                            <th scope="col">Szénhidrát (g)</th>
+                            <th scope="col">Zsír (g)</th>
+                            <th scope="col">Rost (g)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Zöldséges Babkonzerv</td>
+                            <td>120</td>
+                            <td>5</td>
+                            <td>20</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Natúr Babkonzerv</td>
+                            <td>100</td>
+                            <td>4</td>
+                            <td>15</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Fűszeres Babkonzerv</td>
+                            <td>110</td>
+                            <td>6</td>
+                            <td>18</td>
+                            <td>3.5</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Vegán Babkonzerv</td>
+                            <td>130</td>
+                            <td>7</td>
+                            <td>22</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>Vegetáriánus Babkonzerv</td>
+                            <td>130</td>
+                            <td>7</td>
+                            <td>22</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            <section>
+                <h2>Fenntarthatóság</h2>
+                <figure class="float-right">
+                    <a href="media/kep3.jpg" target="_blank">
+                        <img src="media/kep3-thumb.jpg" alt="tágas gyárbelső, rengeteg géppel, polcokkal">
+                    </a>
+                    <figcaption>A gyár belseje</figcaption>
+                </figure>
+                <p>Nem csak a minőség és az íz fontos számunkra, hanem a fenntarthatóság is. Azon dolgozunk, hogy
+                    fenntarthatóbb gyártási folyamatokat alakítsunk ki, és csökkentsük a környezeti lábnyomunkat.
+                    Termékeink csomagolásában is igyekszünk fenntartható anyagokat és megoldásokat alkalmazni.</p>
+            </section>
+            <section>
+                <h2>Csatlakozzon Hozzánk!</h2>
+                <p>Köszönjük, hogy érdeklődik rólunk és termékeinkről. Reméljük, hogy hamarosan ügyfelünk lehetünk,
+                    és
+                    Önt is kiszolgálhatjuk a legfinomabb babkonzervekkel.</p>
+                <p>Ha bármilyen kérdése van, ne habozzon felvenni velünk a kapcsolatot! Ügyfélszolgálatunk
+                    készséggel
+                    áll rendelkezésére.</p>
+            </section>
+        </article>
+    </main>
+    <footer id="footer">
+        <div id="footer-table">
+            <ul id="left">
+                <li><strong>Kapcsolat</strong></li>
+                <li>Cím: Babgyár út 123, Pécsvárad, 1234</li>
+                <li>Telefon: +36 1 234 5678</li>
+                <li>E-mail: info@babgyar.hu</li>
+            </ul>
+            <ul id="right">
+                <li><strong>Navigáció</strong></li>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+                <li><a href="join.html">Jelentkezés</a></li>
+            </ul>
+        </div>
+        <div id="copyright"><strong>Copyright © 2024 Babgyár Kft.</strong></div>
+    </footer>
+</body>
+
+</html>

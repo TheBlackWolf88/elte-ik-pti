@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Babgyár Kft. - Főoldal</title>
+    <link rel="icon" type="image/png" href="media/bean.png">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function swapBiggyMode() {
+            var element = document.getElementById("content");
+            element.classList.toggle("nagy");
+        }
+
+        function toggleNavBar() {
+            var element = document.getElementById("navbar");
+            element.classList.toggle("dis-n")
+        }
+    </script>
+</head>
+
+<body>
+    <div id="floating-button">
+        <button onclick="swapBiggyMode()">
+            <img src="media/inc-font.svg" height="40" alt="Nagybetűs nézet">
+        </button>
+    </div>
+    <header id="header">
+        <nav>
+            <a href="#content" class="hidden">Ugrás a tartalomra</a>
+        </nav>
+        <div id="con-head">
+            <div class="fr">
+                <img src="media/bab.png" alt="babgyár kft logója egy babkonzervvel" height="48">
+                <button class="float-right" id="hide-btn" onclick="toggleNavBar()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg></button>
+            </div>
+            <div class="sep"></div>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html" class="selected">Főoldal</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Rólunk</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <a href="join.html">Jelentkezés</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <article>
+            <h1>Üdvözöljük a Babgyár Kft. honlapján!</h1>
+            <section>
+                <h2>Fedezze fel velünk az ízek világát!</h2>
+                <p>Már évtizedek óta büszkén szállítjuk a legfrissebb és legízletesebb <a
+                        href="https://hu.wikipedia.org/wiki/Vetem%C3%A9nybab">bab</a><a
+                        href="https://hu.wikipedia.org/wiki/Konzervdoboz">konzerv</a>eket világszerte.
+                    Szakértelmünk és elkötelezettségünk a minőség iránt garantálja, hogy minden egyes falat, amit
+                    készítünk, kiváló ízű és tápláló legyen.</p>
+                <div class="float-right">
+                    <img src="media/index_image.jpg"
+                        alt="egy rajzolt kép egy családról, akik babot esznek az asztalnál" height="300">
+                </div>
+                <h3>Miért válasszon minket?</h3>
+                <ul>
+                    <li>Minőség: A Babgyár Kft.-nél a minőség mindennél fontosabb. Szigorú minőségellenőrzési
+                        folyamataink biztosítják, hogy termékeink mindig kifogástalanok legyenek.</li>
+                    <li>Frissesség: Friss alapanyagokból készítjük termékeinket, hogy Ön mindig a legfinomabb ízeket
+                        élvezhesse.</li>
+                    <li>Hagyomány és innováció: Hagyományos recepteket és modern technológiákat ötvözve hozunk létre
+                        olyan termékeket, amelyek minden igényt kielégítenek.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Legfrissebb hírek és termékek</h2>
+                <p>Kövesse weboldalunkat, hogy értesüljön legújabb híreinkről, termékeinkről és különleges
+                    ajánlatainkról!</p>
+                <p>Várjuk Önt szeretettel a Babgyár Kft.-nél!</p>
+            </section>
+            <section>
+                <h2>Termékek</h2>
+                <h3>Friss Zöldségekkel Gazdagított Babkonzervek</h3>
+                <p>Kiváló minőségű, friss zöldségekkel gazdagított babkonzervek, melyek frissességet és ízletességet
+                    garantálnak minden egyes falatban. A gondosan válogatott alapanyagokkal készült konzerveink
+                    ideálisak mind az egészséges étrend részeként, mind pedig különféle ételkészítési lehetőségekhez.
+                </p>
+                <h3> Natúr Babkonzervek</h3>
+                <aside>
+                    <h2>Mitől natúr a babkonzerv?</h2>
+                    <p>Egy natúr babkonzerv az alapvető összetevőket tartalmazza, anélkül, hogy hozzáadott ízfokozókat,
+                        tartósítószereket vagy más mesterséges anyagokat tartalmazna. A natúr babkonzerv ideális lehet
+                        azoknak, akik szeretnék minimalizálni az ételükhöz
+                        adott mesterséges anyagok mennyiségét.</p>
+                </aside>
+                <p>A natúr babkonzervek egyszerűsége és tisztasága az alapanyagok frissességét hangsúlyozza. Tökéletes
+                    választás azok számára, akik a lehető legkevesebb feldolgozott élelmiszert keresik, és saját
+                    receptjeikben szeretnék felhasználni a babot.</p>
+                <h3> Fűszeres Babkonzervek</h3>
+                <p>Az ínyenceknek szánt fűszeres babkonzervek különleges ízvilágot kínálnak. A fűszerekkel gazdagított
+                    babok egyedi és karakteres ízekkel rendelkeznek, amelyek kiválóan harmonizálnak más ételekkel és
+                    fogásokkal.</p>
+                <h3> Vegán és Vegetáriánus Opciók</h3>
+                <p>Különféle <a href="https://hu.wikipedia.org/wiki/Veganizmus">vegán</a> és <a
+                        href="https://hu.wikipedia.org/wiki/Vegetarianizmus">vegetáriánus</a> babkonzervek széles
+                    választéka áll rendelkezésre azoknak, akik
+                    húsmentes étrendet követnek vagy különleges táplálkozási igényekkel rendelkeznek. Ezek az étrendek
+                    teljes értékű fehérjeforrásokat biztosítanak, miközben ízletes és tápláló fogásokat tesznek
+                    lehetővé.</p>
+                <h3> Különleges Kóstolók és Készletek</h3>
+                <p>Különleges kóstolók és ajándék készletek kaphatók, amelyek ideálisak ajándékként vagy saját ínyencei
+                    kényeztetésére. Ezek a készletek válogatott termékeket tartalmaznak, hogy Ön és szerettei
+                    élvezhessék a Babgyár Kft. legfinomabb termékeit.</p>
+                <p>Minden Babgyár Kft. termék friss, minőségi alapanyagokból készül, és szigorú minőségellenőrzési
+                    folyamatokon megy keresztül, hogy Ön mindig a legjobbat kapja az asztalán.</p>
+            </section>
+        </article>
+    </main>
+    <footer id="footer">
+        <div id="footer-table">
+            <ul id="left">
+                <li><strong>Kapcsolat</strong></li>
+                <li>Cím: Babgyár út 123, Pécsvárad, 1234</li>
+                <li>Telefon: +36 1 234 5678</li>
+                <li>E-mail: info@babgyar.hu</li>
+            </ul>
+            <ul id="right">
+                <li><strong>Navigáció</strong></li>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+                <li><a href="join.html">Jelentkezés</a></li>
+            </ul>
+        </div>
+        <div id="copyright"><strong>Copyright © 2024 Babgyár Kft.</strong></div>
+    </footer>
+</body>
+
+</html>

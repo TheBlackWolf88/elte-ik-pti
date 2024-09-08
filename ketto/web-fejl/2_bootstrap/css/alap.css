@@ -1,0 +1,87 @@
+/* A Bootstrap-es oldal megjelenésének felülírása*/
+
+body {
+    background-image: url("../media/fejlechatter.jpg")
+}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.nyomtatas {
+    display: none;
+}
+
+.table-dark td {
+    background-color : #6d5435;
+}
+
+.text-primary {
+    color: rgb(124,88, 92) !important;
+}
+
+#styleswitch {
+    text-align: right;
+    margin: 10px;
+}
+
+body.large {
+    font-size: 2rem !important;
+}
+
+body.large .container-lg{
+    max-width: 95% !important;
+}
+
+body.large .col-lg-6,
+body.large .col-md-6,
+body.large .col-md-8,
+body.large .col-md-4,
+body.large .col-lg-4 {
+    flex: 100%;
+}
+
+@media print {
+
+    body div.container-lg{
+        color: black !important;
+    }
+    div.container {
+        max-width: 100% !important;
+        margin: 0 !important;
+        border: none !important;
+    }
+
+    details, nav, .ratio, div.carousel {
+        display: none !important;
+    }
+
+    a::after {
+        content: " (" attr(href) ")"
+    }
+
+    div.row {
+        margin: 0 !important;
+    }
+    table tr>* {
+        border: none !important;
+        padding: 5px !important;
+    }
+    figure img {
+        max-width: 50% !important;
+    }
+    pre {
+        font-size: 75% !important;
+    }
+
+    .nyomtatas {
+        display: block;
+        border: 1px dashed gray;
+        padding: 10px;
+    }
+
+}
+

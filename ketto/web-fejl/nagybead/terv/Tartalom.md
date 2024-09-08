@@ -5,7 +5,8 @@ Főoldal
 <figure>
   <img src="images/bab.png" alt="fejléc középen babgyár kft jobb oldalonbabkonzerv egy kenyér előtt"/>
   <figcaption>Fejléc képe</figcaption>
-</figure> 
+</figure>
+
 ## Fedezze fel velünk az ízek világát!
 
 Már évtizedek óta büszkén szállítjuk a legfrissebb és legízletesebb babkonzerveket világszerte. Szakértelmünk és elkötelezettségünk a minőség iránt garantálja, hogy minden egyes falat, amit készítünk, kiváló ízű és tápláló legyen.

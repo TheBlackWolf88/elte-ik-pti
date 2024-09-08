@@ -1,0 +1,24 @@
+﻿/* nagybetűs stílus */
+
+@import url('alapstilus.css');
+
+body {
+	font-size:2em;
+	
+}
+
+a#nagybetu{display: none;}
+
+a#normalbetu {display: block;}
+
+header, main, footer {
+    width:90%;
+    max-width: 1200px;
+}
+
+nav#gyengenlato {
+    width: 500px;
+}
+
+
+

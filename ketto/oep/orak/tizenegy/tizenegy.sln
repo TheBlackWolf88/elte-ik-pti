@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microwave", "Microwave\Microwave.csproj", "{BB01DB77-303C-4572-9B60-E51C67D72539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micro2ElectricBoogalloo", "Micro2ElectricBoogalloo\Micro2ElectricBoogalloo.csproj", "{F17C66EA-3E47-4719-9C1D-BB827BDEBBA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB01DB77-303C-4572-9B60-E51C67D72539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB01DB77-303C-4572-9B60-E51C67D72539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB01DB77-303C-4572-9B60-E51C67D72539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB01DB77-303C-4572-9B60-E51C67D72539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F17C66EA-3E47-4719-9C1D-BB827BDEBBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F17C66EA-3E47-4719-9C1D-BB827BDEBBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17C66EA-3E47-4719-9C1D-BB827BDEBBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F17C66EA-3E47-4719-9C1D-BB827BDEBBA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

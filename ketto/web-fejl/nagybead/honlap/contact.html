@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Babgyár Kft. - Kapcsolat</title>
+    <link rel="icon" type="image/png" href="media/bean.png">
+    <link href="css/style.css" rel="stylesheet">
+    <script>
+        function swapBiggyMode() {
+            var element = document.getElementById("content");
+            element.classList.toggle("nagy");
+        }
+
+        function toggleNavBar() {
+            var element = document.getElementById("navbar");
+            element.classList.toggle("dis-n")
+        }
+    </script>
+</head>
+
+<body>
+    <div id="floating-button">
+        <button onclick="swapBiggyMode()">
+            <img src="media/inc-font.svg" height="40" alt="Nagybetűs nézet">
+        </button>
+    </div>
+    
+<header id="header">
+        <nav>
+            <a href="#content" class="hidden">Ugrás a tartalomra</a>
+        </nav>
+        <div id="con-head">
+            <div class="fr">
+                <img src="media/bab.png" alt="babgyár kft logója egy babkonzervvel" height="48">
+                <button class="float-right" id="hide-btn" onclick="toggleNavBar()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg></button>
+            </div>
+            <div class="sep"></div>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href="index.html">Főoldal</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Rólunk</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="selected">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <a href="join.html">Jelentkezés</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <article>
+            <h1>Kapcsolatok</h1>
+            <section>
+                <h2>Székhely</h2>
+                <p>Cím: Babgyár Kft.<br>Babgyár út 123, Pécsvárad, 1234</p>
+            </section>
+            <section>
+                <h2>Kapcsolatfelvétel</h2>
+                <p>Telefon: <a href="tel:+36-1-234-5678">+36 1 234 5678</a><br>E-mail: <a
+                        href="mailto:info@babgyar.hu">info@babgyar.hu</a></p>
+            </section>
+            <section>
+                <h2>Kapcsolattartók</h2>
+                <p>Ha kérdése vagy észrevétele van, kérjük, vegye fel a kapcsolatot az alábbi kapcsolattartókkal:</p>
+                <ol>
+                    <li>
+                        <span>Kereskedelmi Igazgató: <strong>Álmos Péter</strong></span>
+                        <ul>
+                            <li>Telefon: <a href="tel:+36-30-123-4567">+36 30 123 4567</a></li>
+                            <li>E-mail: <a href="mailto:peter.almos@babgyar.hu">peter.almos@babgyar.hu</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Ügyfélszolgálati Vezető: <strong>Kiss Katalin</strong></span>
+                        <ul>
+                            <li>Telefon: <a href="tel:+36-30-987-6543">+36 30 987 6543</a></li>
+                            <li>E-mail: <a href="mailto:katalin.kiss@babgyar.hu">katalin.kiss@babgyar.hu</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>Vevőkapcsolati Menedzser: <strong>Nagy Gábor</strong></span>
+                        <ul>
+                            <li>Telefon: <a href="tel:+36-30-555-1234">+36 30 555 1234</a></li>
+                            <li>E-mail: <a href="mailto:gabor.nagy@babgyar.hu">gabor.nagy@babgyar.hu</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+            <figure class="center">
+                <img src="media/kapcsolatok.jpg" alt="a képen pár csapattag látható" width="500">
+                <figcaption>A csapat</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer id="footer">
+        <div id="footer-table">
+            <ul id="left">
+                <li><strong>Kapcsolat</strong></li>
+                <li>Cím: Babgyár út 123, Pécsvárad, 1234</li>
+                <li>Telefon: +36 1 234 5678</li>
+                <li>E-mail: info@babgyar.hu</li>
+            </ul>
+            <ul id="right">
+                <li><strong>Navigáció</strong></li>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+                <li><a href="join.html">Jelentkezés</a></li>
+            </ul>
+        </div>
+        <div id="copyright"><strong>Copyright © 2024 Babgyár Kft.</strong></div>
+    </footer>
+</body>
+
+</html>
